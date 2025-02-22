@@ -39,6 +39,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/ # Local directory where Astro outputs the build
+          local-dir: ./out/ # Local directory where Astro outputs the build
           server-dir: /public_html/ # Root folder on the server
           protocol: ftp
