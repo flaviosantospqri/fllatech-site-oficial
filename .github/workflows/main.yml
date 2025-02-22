@@ -1,0 +1,44 @@
+name: Build and Deploy Next App
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # Use the Node.js version your project requires
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the Astro application
+      - name: Build Next App
+        run: npm run build
+
+      # Deploy to FTP
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/ # Local directory where Astro outputs the build
+          server-dir: /public_html/ # Root folder on the server
+          protocol: ftp
