@@ -1,0 +1,44 @@
+.service-container{
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #a5a5a5;
+    h1{
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+}
+.bullet-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+    p{
+        // width: 180px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #69df16;
+        border: 0.5px solid #f1f1f134;
+        border-radius: 12px;
+        padding: 5px 10px;
+    }
+}
+.service-text{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 20px;
+    p{
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}

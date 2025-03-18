@@ -15,8 +15,8 @@ export default function Navbar() {
                 </div>
 
                 <div className="desktop-menu">
-                    <Link href="/" className="menu-item">Sobre Nós</Link>
-                    <Link href="/" className="menu-item">Nosso Serviços</Link>
+                    <Link href="#about" className="menu-item">Sobre Nós</Link>
+                    <Link href="#service" className="menu-item">Nosso Serviços</Link>
                     <Link href="/" className="menu-item">Entre em contato</Link>
                 </div>
 
