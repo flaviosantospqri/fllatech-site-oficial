@@ -1,9 +1,6 @@
 import "./style.scss"
-interface HeroProps {
 
-}
-
-export const Hero: React.FC<HeroProps> = () => {
+export const Hero: React.FC = () => {
     return (
         <div className="hero-container">
             <div className="hero-text"><h1>O MUNDO É <span>DIGITAL</span> <br />SEJA DIGITAL COM A <span>FLLATECH</span></h1></div>
