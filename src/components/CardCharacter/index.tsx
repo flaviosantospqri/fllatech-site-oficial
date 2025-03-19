@@ -8,7 +8,7 @@ interface CardCharProps {
     description: string;
     subtitle: string;
 }
-export const CardCharacter: React.FC<CardCharProps> = ({ icon, title, subtitle, description }) => {
+export const CardCharacter: React.FC<CardCharProps> = ({ icon, title, subtitle }) => {
     return (
         <div className='card-char-container'>
             <div className="card-char">

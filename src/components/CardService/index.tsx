@@ -13,7 +13,7 @@ interface CardServiceProps {
     price?: number;
 }
 
-export const CardService: React.FC<CardServiceProps> = ({ title, description, icon, descriptionDetails, target, price }) => {
+export const CardService: React.FC<CardServiceProps> = ({ title, description, descriptionDetails, target, price }) => {
     return (
         <div className="card-service">
             {
