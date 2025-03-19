@@ -1,0 +1,97 @@
+.card-service {
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.226); 
+    padding: 20px;
+    box-sizing: border-box;
+    background: none; 
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 12px;
+    text-align: left;
+    color: #cecdcd;
+    position: relative;
+    font-size: 14px;
+    li{
+        display: flex;
+        gap: 10px; 
+        width: 100%;
+        margin-bottom: 10px;
+        align-items: center;
+        text-align: left;
+        font-size: 12px;
+    }
+    h2{
+        font-size: 1.5rem;
+        color: #69df16;
+    }
+}
+.card-title{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: start;
+   .card-service-price{
+    font-size: 2rem;
+    color: #cecdcd;
+   }
+    p{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        text-align: left;
+    }
+    &::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #ffffff34;
+        display: block;
+        margin: 10px 0;
+    }
+
+}
+.card-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    button{
+        width: 100%;
+        height: 40px;
+        background: #f1f1f1;
+        color:#010101 ;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.7s;
+        &:hover{
+            background: #69df16;
+            color:#010101 ;
+        }
+    }
+}
+
+.target{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    color: #69df16;
+    background-color: #0D0D0D;
+    border: 1px solid rgba(255, 255, 255, 0.226); 
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

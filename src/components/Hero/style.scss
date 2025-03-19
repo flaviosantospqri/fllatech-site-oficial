@@ -8,6 +8,7 @@
     position: relative; 
     color: #f8f9fa;
     flex-direction: column;
+    
     p{
         width: 50%;
         text-align: center;
@@ -22,9 +23,20 @@
     right: 0;
     bottom: 0;
     background-image: url("../../assets/img/bannersite.png");
-    background-size: cover; 
-    filter: brightness(0.5); 
-    z-index: -1; 
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+
+@keyframes soft-scroll {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
 }
 
 .hero-container h1 {

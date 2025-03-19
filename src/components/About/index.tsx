@@ -9,10 +9,10 @@ export const About: React.FC = () => {
     return (
         <div>
             <div className="about-container" id='about'>
-                <div className='bullet-about'>
-                    <p><Image src={aboutimg} width={25} height={25} alt='about us icon' /> Sobre nós</p>
-                </div>
                 <div className='about-text'>
+                    <div className='bullet-about'>
+                        <p><Image src={aboutimg} width={25} height={25} alt='about us icon' /> Sobre nós</p>
+                    </div>
                     <h1>Porque nos esolher</h1>
                     <p>A Fllatech tem como missão levar aos
                         empreendedores inovação e soluções em tecnologia.
