@@ -6,7 +6,6 @@ import { CardService } from "../CardService";
 import { CardCharacter } from "../CardCharacter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCamera, faDesktop, faListCheck } from "@fortawesome/free-solid-svg-icons";
-import Porfolio from "../Porfolio";
 
 interface PortfolioItem {
     title: string;
