@@ -1,5 +1,5 @@
 .card-char-container{
-    border: 1px solid rgba(255, 255, 255, 0.226); 
+    border: 1px solid rgba(255, 255, 255, 0.034); 
     width: 350px;
     background-color:#161616;
     height: 240px;
@@ -32,9 +32,13 @@
 }
 .card-char-info{
     align-self: flex-end;
-    border: 2px solid rgba(255, 255, 255); 
+}
+.btn-char-info{
+    border: 1px solid rgba(255, 255, 255); 
     cursor: pointer;
+    border-radius: 100%;
     padding: 5px;
-    box-sizing: border-box;
-    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

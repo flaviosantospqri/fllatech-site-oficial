@@ -21,7 +21,7 @@ export const CardCharacter: React.FC<CardCharProps> = ({ icon, title, subtitle }
                 </div>
             </div>
             <div className="card-char-info">
-                <button><FontAwesomeIcon icon={faInfo} width={20} height={20} color='#ffffff' /></button>
+                <button className='btn-char-info'><FontAwesomeIcon icon={faInfo} width={15} height={15} color='#ffffff' /></button>
             </div>
         </div>
     )

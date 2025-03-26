@@ -1,0 +1,32 @@
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px; 
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    gap: 20px;
+    position: relative;
+    
+}
+
+.portfolio-item {
+    position: sticky;
+    height: 600px;
+    max-height: 600px;
+    top: 70px;
+    border: 1px solid rgba(255, 255, 255, 0.034); 
+    background-color:#161616;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+.portfolio-item:not(:first-child) {
+    margin-top: 50px;
+}
+
