@@ -7,13 +7,6 @@ import { CardCharacter } from "../CardCharacter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCamera, faDesktop, faListCheck } from "@fortawesome/free-solid-svg-icons";
 
-interface PortfolioItem {
-    title: string;
-    description: string;
-    image: string;
-    link: string;
-}
-
 
 export const Service: React.FC = () => {
     const allServices = {
@@ -97,13 +90,6 @@ export const Service: React.FC = () => {
             },
         ],
     }
-    const data: PortfolioItem[] = [
-        { "title": "Projeto 1", "description": "Descrição do projeto 1", "image": "https://via.placeholder.com/150", "link": "https://www.google.com" },
-        { "title": "Projeto 1", "description": "Descrição do projeto 1", "image": "https://via.placeholder.com/150", "link": "https://www.google.com" },
-        { "title": "Projeto 1", "description": "Descrição do projeto 1", "image": "https://via.placeholder.com/150", "link": "https://www.google.com" },
-    ]
-
-
     return (
         <div>
             <div className="service-container" id="service">
@@ -258,10 +244,6 @@ export const Service: React.FC = () => {
                         }
                     />
                 </div>
-
-
-                <h1>Centro ?</h1>
-
                 <div className="service-text">
                     <div className="bullet-service">
                         <p>
