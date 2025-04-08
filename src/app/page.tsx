@@ -1,6 +1,7 @@
 
 import { About } from "@/components/About";
 import Faq from "@/components/Faqs";
+import Footer from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import Navbar from "@/components/NavBar";
 import Porfolio from "@/components/Porfolio";
@@ -17,6 +18,7 @@ export default function Home() {
       <Porfolio />
       <Faq />
       <Process />
+      <Footer />
     </>
   );
 }

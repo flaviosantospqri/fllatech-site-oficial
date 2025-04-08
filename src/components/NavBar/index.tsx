@@ -1,8 +1,6 @@
 'use client';
 import Link from 'next/link';
 import './style.scss';
-import logoimg from '../../assets/logo/flatech-white-logo.png';
-import Image from 'next/image';
 
 export default function Navbar() {
     return (
@@ -10,21 +8,27 @@ export default function Navbar() {
             <div className="container">
                 <div className="logo">
                     <Link href="/">
-                        <Image src={logoimg} alt="Logo Flatech" width="100" />
+                        Flla<span className='target-color'>tech</span>
                     </Link>
                 </div>
 
                 <div className="desktop-menu">
                     <Link href="#about" className="menu-item">Sobre Nós</Link>
                     <Link href="#service" className="menu-item">Nosso Serviços</Link>
-                    <Link href="/" className="menu-item">Entre em contato</Link>
+                    <Link href="#portfolio" className="menu-item">Criação</Link>
+                    <Link href="#faq" className="menu-item">Duvidas Frequentes</Link>
+                    <Link href="#process" className="menu-item">Nosso Processo</Link>
+                    <Link href="#footer" className="menu-item">Contatos</Link>
                 </div>
 
 
                 <div className="mobile-menu">
-                    <Link href="/" className="mobile-menu-item">Sobre Nós</Link>
-                    <Link href="/" className="mobile-menu-item">Nosso Serviços</Link>
-                    <Link href="/" className="mobile-menu-item">Entre em contato</Link>
+                    <Link href="#about" className="mobile-menu-item">Sobre Nós</Link>
+                    <Link href="#service" className="mobile-menu-item">Nosso Serviços</Link>
+                    <Link href="#portfolio" className="mobile-menu-item">Criação</Link>
+                    <Link href="#faq" className="mobile-menu-item">Duvidas Frequentes</Link>
+                    <Link href="#process" className="mobile-menu-item">Nosso Processo</Link>
+                    <Link href="#footer" className="mobile-menu-item">Contatos</Link>
                     <button className="cta-mobile">CTA</button>
                 </div>
 

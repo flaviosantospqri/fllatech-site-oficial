@@ -64,7 +64,7 @@ const Faq = () => {
     };
 
     return (
-        <div className="container-faq-all">
+        <div className="container-faq-all" id="faq">
             <div className="bullet-about">
                 <p>
                     <FontAwesomeIcon icon={faHandshake} width={25} /> FAQs

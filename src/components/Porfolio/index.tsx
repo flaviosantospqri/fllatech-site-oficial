@@ -43,7 +43,7 @@ const Porfolio = () => {
     ];
 
     return (
-        <div className="container-portfolio-all">
+        <div className="container-portfolio-all" id="portfolio">
             <div className="bullet-about">
                 <p>
                     <FontAwesomeIcon icon={faHandshake} width={25} /> Nossas
@@ -64,11 +64,6 @@ const Porfolio = () => {
             <ul className="portfolio-container">
                 {data.map((item, index) => (
                     <li key={index} className="portfolio-item">
-                        <div className="portfolio-item-text">
-                            <h1>{item.title}</h1>
-                            <p>{item.description}</p>
-                            <a href={item.link}>Contato</a>
-                        </div>
                         <div className="portfolio-item-image">
                             <Image
                                 src={item.image}
@@ -77,6 +72,11 @@ const Porfolio = () => {
                                 width={600}
                                 height={600}
                             />
+                        </div>
+                        <div className="portfolio-item-text">
+                            <h1>{item.title}</h1>
+                            <p>{item.description}</p>
+                            <a href={item.link}>Contato</a>
                         </div>
                     </li>
                 ))}
