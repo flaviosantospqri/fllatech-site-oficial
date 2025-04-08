@@ -1,8 +1,13 @@
 'use client';
 import Link from 'next/link';
 import './style.scss';
+import { useState } from 'react';
+import { FiMenu, FiX } from "react-icons/fi"
+
 
 export default function Navbar() {
+    const [isOpen, setIsOpen] = useState<boolean>(false)
+
     return (
         <nav className="navbar">
             <div className="container">
@@ -21,7 +26,19 @@ export default function Navbar() {
                     <Link href="#footer" className="menu-item">Contatos</Link>
                 </div>
 
+                <div className="mobile-menu-button">
+                    <button onClick={() => setIsOpen(!isOpen)}>
+                        {isOpen ? <FiX color="white" size={32} /> : <FiMenu color="white" size={32} />}
+                    </button>
+                </div>
 
+
+                <div className="cta-button">
+                    <button>Contato</button>
+                </div>
+
+            </div>
+            {isOpen && (
                 <div className="mobile-menu">
                     <Link href="#about" className="mobile-menu-item">Sobre Nós</Link>
                     <Link href="#service" className="mobile-menu-item">Nosso Serviços</Link>
@@ -31,25 +48,7 @@ export default function Navbar() {
                     <Link href="#footer" className="mobile-menu-item">Contatos</Link>
                     <button className="cta-mobile">CTA</button>
                 </div>
-
-
-                <div className="mobile-menu-button">
-                    <button>
-                        <svg stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path
-                                fillRule="evenodd"
-                                clipRule="evenodd"
-                                d="M4 6h16M4 12h16M4 18h16"
-                            />
-                        </svg>
-                    </button>
-                </div>
-
-
-                <div className="cta-button">
-                    <button>Contato</button>
-                </div>
-            </div>
+            )}
         </nav>
     );
 }

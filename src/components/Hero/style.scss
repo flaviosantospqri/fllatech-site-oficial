@@ -7,6 +7,16 @@
     position: relative; 
     color: #f8f9fa;
     flex-direction: column;
+    @media screen and (max-width: 768px) {
+        height: 50vh;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: 100% !important;  
+        }
+        
+    }
     
     p{
         width: 50%;
@@ -44,6 +54,11 @@
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 0;
+        
+    }
 }
 
 .hero-container h1 span {

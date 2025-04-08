@@ -15,6 +15,14 @@
     &:hover{
         background-color: #141414;
     }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.034);
+        
+    }
     
 }
 .card-char-text{
@@ -25,6 +33,10 @@
     h2{
         font-size: 1.5rem;
         color: #cecdcd;
+        @media screen and (max-width: 768px) {
+            font-size: 1.3rem;
+            
+        }
     }
     p{
         font-size: 14px;
