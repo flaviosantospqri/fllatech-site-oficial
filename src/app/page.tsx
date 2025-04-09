@@ -8,11 +8,13 @@ import Navbar from "@/components/NavBar";
 import Porfolio from "@/components/Porfolio";
 import Process from "@/components/Process";
 import { Service } from "@/components/Service";
+import { LightParticles } from "@/components/SoftLightSpot";
 
 export default function Home() {
   return (
     <>
       <LightSpots />
+      <LightParticles />
       <Navbar />
       <Hero />
       <About />
