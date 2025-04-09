@@ -6,7 +6,6 @@ import { CardService } from "../CardService";
 import { CardCharacter } from "../CardCharacter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCamera, faDesktop, faListCheck } from "@fortawesome/free-solid-svg-icons";
-import { Reveal } from "../Reveal";
 
 
 export const Service: React.FC = () => {
@@ -106,46 +105,46 @@ export const Service: React.FC = () => {
                             Mais procurados
                         </p>
                     </div>
-                    <Reveal variant="fadeIn" delay={0.2}>
-                        <h1>Nossos Principais Produtos</h1>
-                    </Reveal>
-                    <Reveal variant="slideLeft" delay={0.2}>
-                        <p>
-                            A Fllatech tem como missão levar aos empreendedores inovação e
-                            soluções em tecnologia. Se você deseja se destacar digitalmente, a
-                            Fllatech te ajuda!
-                        </p>
-                    </Reveal>
-                    <Reveal variant="slideLeft" delay={0.2}>
-                        <p>
-                            Nós estaremos juntos em cada processo, em prol do mesmo objetivo,
-                            alcançar as suas metas.
-                        </p>
-                    </Reveal>
+
+                    <h1>Nossos Principais Produtos</h1>
+
+
+                    <p>
+                        A Fllatech tem como missão levar aos empreendedores inovação e
+                        soluções em tecnologia. Se você deseja se destacar digitalmente, a
+                        Fllatech te ajuda!
+                    </p>
+
+
+                    <p>
+                        Nós estaremos juntos em cada processo, em prol do mesmo objetivo,
+                        alcançar as suas metas.
+                    </p>
+
                 </div>
                 <div className="service-card-gallery">
-                    <Reveal variant="slideLeft" delay={0.2}>
-                        <CardService
-                            title="Pacote Web"
-                            description="Desenvolvemos sites e sistemas web personalizados para o seu negócio."
-                            icon={
-                                <Image
-                                    src={servicesImg}
-                                    width={25}
-                                    height={25}
-                                    alt="service us icon"
-                                />
-                            }
-                            descriptionDetails={[
-                                "Sites responsivos",
-                                "Sistemas web",
-                                "E-commerce",
-                                "Landing page",
-                            ]}
-                            target={false}
-                            price={400}
-                        />
-                    </Reveal>
+
+                    <CardService
+                        title="Pacote Web"
+                        description="Desenvolvemos sites e sistemas web personalizados para o seu negócio."
+                        icon={
+                            <Image
+                                src={servicesImg}
+                                width={25}
+                                height={25}
+                                alt="service us icon"
+                            />
+                        }
+                        descriptionDetails={[
+                            "Sites responsivos",
+                            "Sistemas web",
+                            "E-commerce",
+                            "Landing page",
+                        ]}
+                        target={false}
+                        price={400}
+                    />
+
                     <CardService
                         title="Pacote Redes Sociais"
                         description="Desenvolvemos sites e sistemas web personalizados para o seu negócio."
@@ -166,28 +165,28 @@ export const Service: React.FC = () => {
                         target={true}
                         price={800}
                     />
-                    <Reveal variant="slideRight" delay={0.2}>
-                        <CardService
-                            title="Tráfego e Divulgação"
-                            description="Desenvolvemos sites e sistemas web personalizados para o seu negócio."
-                            icon={
-                                <Image
-                                    src={servicesImg}
-                                    width={25}
-                                    height={25}
-                                    alt="service us icon"
-                                />
-                            }
-                            descriptionDetails={[
-                                "Sites responsivos",
-                                "Sistemas web",
-                                "E-commerce",
-                                "Landing page",
-                            ]}
-                            target={false}
-                            price={1300}
-                        />
-                    </Reveal>
+
+                    <CardService
+                        title="Tráfego e Divulgação"
+                        description="Desenvolvemos sites e sistemas web personalizados para o seu negócio."
+                        icon={
+                            <Image
+                                src={servicesImg}
+                                width={25}
+                                height={25}
+                                alt="service us icon"
+                            />
+                        }
+                        descriptionDetails={[
+                            "Sites responsivos",
+                            "Sistemas web",
+                            "E-commerce",
+                            "Landing page",
+                        ]}
+                        target={false}
+                        price={1300}
+                    />
+
                 </div>
 
                 <div className="service-text">
@@ -214,21 +213,21 @@ export const Service: React.FC = () => {
                     </p>
                 </div>
                 <div className="service-card-gallery">
-                    <Reveal variant="slideLeft" delay={0.2}>
-                        <CardCharacter
-                            title="Responsividade & SEO"
-                            subtitle="Otimização de Sites, sites responsivos e com as melhores práticas de SEO."
-                            description="Apareça nas primeiras páginas do Google."
-                            icon={
-                                <FontAwesomeIcon
-                                    icon={faDesktop}
-                                    width={50}
-                                    height={50}
-                                    color="#69df16"
-                                />
-                            }
-                        />
-                    </Reveal>
+
+                    <CardCharacter
+                        title="Responsividade & SEO"
+                        subtitle="Otimização de Sites, sites responsivos e com as melhores práticas de SEO."
+                        description="Apareça nas primeiras páginas do Google."
+                        icon={
+                            <FontAwesomeIcon
+                                icon={faDesktop}
+                                width={50}
+                                height={50}
+                                color="#69df16"
+                            />
+                        }
+                    />
+
 
                     <CardCharacter
                         title="Exclusividade"
@@ -243,21 +242,21 @@ export const Service: React.FC = () => {
                             />
                         }
                     />
-                    <Reveal variant="slideRight" delay={0.2}>
-                        <CardCharacter
-                            title="Atendimento"
-                            subtitle="Você é nossa prioridade, sempre!"
-                            description="Apareça nas primeiras páginas do Google."
-                            icon={
-                                <FontAwesomeIcon
-                                    icon={faListCheck}
-                                    width={50}
-                                    height={50}
-                                    color="#69df16"
-                                />
-                            }
-                        />
-                    </Reveal>
+
+                    <CardCharacter
+                        title="Atendimento"
+                        subtitle="Você é nossa prioridade, sempre!"
+                        description="Apareça nas primeiras páginas do Google."
+                        icon={
+                            <FontAwesomeIcon
+                                icon={faListCheck}
+                                width={50}
+                                height={50}
+                                color="#69df16"
+                            />
+                        }
+                    />
+
                 </div>
                 <div className="service-text">
                     <div className="bullet-service">
@@ -287,15 +286,15 @@ export const Service: React.FC = () => {
 
                     {
                         allServices.ourServices.map((service, index) => (
-                            <Reveal variant="maskUp" delay={0.2} key={index}>
-                                <CardCharacter
-                                    key={index}
-                                    title={service.title}
-                                    subtitle={service.subtitle}
-                                    description={service.description}
-                                    icon={service.icon}
-                                />
-                            </Reveal>
+
+                            <CardCharacter
+                                key={index}
+                                title={service.title}
+                                subtitle={service.subtitle}
+                                description={service.description}
+                                icon={service.icon}
+                            />
+
                         ))
                     }
                 </div>
