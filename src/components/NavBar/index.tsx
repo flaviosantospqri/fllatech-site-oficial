@@ -46,7 +46,7 @@ export default function Navbar() {
                     <Link href="#faq" className="mobile-menu-item">Duvidas Frequentes</Link>
                     <Link href="#process" className="mobile-menu-item">Nosso Processo</Link>
                     <Link href="#footer" className="mobile-menu-item">Contatos</Link>
-                    <button className="cta-mobile">CTA</button>
+                    <button className="cta-mobile">Orçamento</button>
                 </div>
             )}
         </nav>

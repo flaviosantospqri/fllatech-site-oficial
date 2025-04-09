@@ -92,14 +92,24 @@
 
     .mobile-menu-button {
       display: block;  
+      transition: 0.3s ease-in-out;
     }
 
     .mobile-menu {
-      display: block;  
+     display: flex;
+     flex-direction: column;
+     left: 0;
+     width: 150px;
+     justify-self: flex-end;
+     gap: 10px;
+     background-color: #0D0D0D;
+     padding: 10px;
     }
 
     .cta-mobile {
       display: block; 
+      border: 1px solid #69df16;
+      border-radius: 12px;
     }
   }
 
@@ -117,8 +127,8 @@
         display: flex;
         position: absolute;
         top: 70px;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 300px;
         flex-direction: column;
         background-color: #0D0D0D;
         transition: all 0.3s ease-in-out;
