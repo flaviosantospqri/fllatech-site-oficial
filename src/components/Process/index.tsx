@@ -3,6 +3,7 @@ import "./style.scss";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake } from "@fortawesome/free-solid-svg-icons/faHandshake";
+import { Reveal } from "../Reveal";
 
 interface ProcessItem {
     title: string;
@@ -51,40 +52,46 @@ const Process = () => {
                     <FontAwesomeIcon icon={faHandshake} width={25} /> Nosso Processo
                 </p>
             </div>
-            <h1>Como funciona nosso processo</h1>
-            <p className="process-text-description">
-                Nossa empresa, Fllatech, é mais do que uma simples prestadora de
-                serviços. Nós somos seus parceiros estratégicos, comprometidos em
-                entender suas necessidades e objetivos. Trabalhamos lado a lado com
-                você, oferecendo soluções personalizadas que realmente fazem a diferença
-                no seu negócio. Nossa equipe é formada por especialistas apaixonados
-                pelo que fazem, prontos para transformar sua visão em realidade. Com a
-                Fllatech, você não está apenas contratando um serviço; você está
-                investindo em um relacionamento de confiança e resultados duradouros.
-            </p>
-            <ul className="process-container">
-                {data.map((item, index) => (
-                    <li key={index} className="process-item">
-                        <div className="process-item-image">
-                            <Image
-                                src={item.image}
-                                loading="lazy"
-                                alt={item.title}
-                                width={600}
-                                height={600}
-                            />
-                        </div>
-                        <div className="process-item-text">
-                            {processData.map((item, index) => (
-                                <div key={index} className="process-item-text-content">
-                                    <h1 className="title-element">{item.title}</h1>
-                                    <p className="paragraph-element">{item.description}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </li>
-                ))}
-            </ul>
+            <Reveal variant="fadeIn" delay={0.2}>
+                <h1>Como funciona nosso processo</h1>
+            </Reveal>
+            <Reveal variant="slideLeft" delay={0.2}>
+                <p className="process-text-description">
+                    Nossa empresa, Fllatech, é mais do que uma simples prestadora de
+                    serviços. Nós somos seus parceiros estratégicos, comprometidos em
+                    entender suas necessidades e objetivos. Trabalhamos lado a lado com
+                    você, oferecendo soluções personalizadas que realmente fazem a diferença
+                    no seu negócio. Nossa equipe é formada por especialistas apaixonados
+                    pelo que fazem, prontos para transformar sua visão em realidade. Com a
+                    Fllatech, você não está apenas contratando um serviço; você está
+                    investindo em um relacionamento de confiança e resultados duradouros.
+                </p>
+            </Reveal>
+            <Reveal variant="slideRight" delay={0.2}>
+                <ul className="process-container">
+                    {data.map((item, index) => (
+                        <li key={index} className="process-item">
+                            <div className="process-item-image">
+                                <Image
+                                    src={item.image}
+                                    loading="lazy"
+                                    alt={item.title}
+                                    width={600}
+                                    height={600}
+                                />
+                            </div>
+                            <div className="process-item-text">
+                                {processData.map((item, index) => (
+                                    <div key={index} className="process-item-text-content">
+                                        <h1 className="title-element">{item.title}</h1>
+                                        <p className="paragraph-element">{item.description}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </Reveal>
         </div>
     );
 };

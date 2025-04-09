@@ -23,9 +23,6 @@
         text-align: center;
     }
 }
-.target-color{
-    color: #69df16;
-}
 .hero-container::before {
     content: "";
     position: absolute;
@@ -62,7 +59,9 @@
 }
 
 .hero-container h1 span {
-    color: #69df16;
+    background: linear-gradient(to right, #69df16, #3a4e3c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-text{
     width: 100%;

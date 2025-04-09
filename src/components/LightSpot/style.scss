@@ -1,0 +1,19 @@
+.light-spots {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  
+    .light-spot {
+      position: absolute;
+      background: radial-gradient(circle, rgba(42, 230, 17, 0.74) 0%, transparent 80%);
+      border-radius: 50%;
+      animation: float 20s ease-in-out infinite alternate;
+    }
+  }
+  
+  @keyframes float {
+    0%   { transform: translateY(0px) translateX(0px); }
+    100% { transform: translateY(-20px) translateX(20px); }
+  }
+  

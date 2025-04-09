@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./style.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { Reveal } from "../Reveal";
 
 interface DataAnswer {
     question: string;
@@ -70,7 +71,9 @@ const Faq = () => {
                     <FontAwesomeIcon icon={faHandshake} width={25} /> FAQs
                 </p>
             </div>
-            <h1>TIRE SUAS DÚVIDAS</h1>
+            <Reveal variant="fadeIn" delay={0.3}>
+                <h1>TIRE SUAS DÚVIDAS</h1>
+            </Reveal>
             <p className="faq-text-description">Perguntas frequentes</p>
             <ul className="faq-container">
                 {data.map((item, index) => (
