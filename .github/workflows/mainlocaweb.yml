@@ -1,0 +1,44 @@
+name: Deploy via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: 🚀 Build e Deploy Next.js
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout do código
+      - name: 🔄 Checkout do repositório
+        uses: actions/checkout@v3
+
+      # Configuração do Node.js
+      - name: 📌 Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # Ajuste conforme necessário
+
+      # Instalar dependências
+      - name: 📦 Instalar dependências
+        run: npm install
+
+      # Construir o projeto
+      - name: 🛠️ Build do Next.js
+        run: npm run build
+
+      # Verificar se o diretório `.next/` existe
+      - name: 📂 Listar arquivos gerados
+        run: ls -la .next/
+
+      # Deploy via FTP
+      - name: 🚀 FTP Deploy Locaweb
+        uses: locaweb/ftp-deploy@1.0.0
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: .next/  # Diretório correto gerado pelo build
+          remoteDir: public_html/  # Ajuste conforme seu servidor
+          debug: true  # Ativa logs detalhados para diagnóstico
