@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-
+        <meta name="google-site-verification" content="OKPFXz9XoaOw3aT6TSq5OfM-enkHalfEcNUAY1Sx-DY" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
