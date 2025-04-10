@@ -40,5 +40,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: .next/ # Local directory where Astro outputs the build
-          server-dir: /home/fllatech1// # Root folder on the server
+          server-dir: /home/fllatech1/ # Root folder on the server
           protocol: ftp
