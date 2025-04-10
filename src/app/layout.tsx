@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Fllatech Soluções",
   description: "Fllatech Soluções - Marketing & Desenvolvimento de Software",
   icons: {
-    icon: "/assets/img/logosemfundo.png",
-    shortcut: "/assets/img/logosemfundo.png",
-    apple: "/assets/img/apple-touch-icon.png",
+    icon: "https://fllatech.com/assets/favicon.ico",
+    shortcut: "https://fllatech.com/assets/img/favicon-32x32.png",
+    apple: "https://fllatech.com/assets/img/apple-touch-icon.png",
   },
   openGraph: {
     title: "Fllatech Soluções",
@@ -30,6 +30,8 @@ export const metadata: Metadata = {
         url: "https://fllatech.com/assets/img/fllatechog.png",
         width: 1200,
         height: 630,
+        alt: "Fllatech Soluções - Marketing & Desenvolvimento de Software",
+        type: "image/png",
       },
     ],
     locale: "pt-BR",
