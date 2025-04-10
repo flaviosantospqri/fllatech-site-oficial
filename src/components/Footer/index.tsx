@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faFacebook, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -63,8 +64,8 @@ const Footer = () => {
                                 <p>Fundadores</p>
                             </div>
                             <div className='founders-names'>
-                                <a href='/profile/laura'>Laura Barbosa</a>
-                                <a href='/profile/flavio'>Flávio Santos</a>
+                                <Link href='/profile/laura'>Laura Barbosa</Link>
+                                <Link href='/profile/flavio'>Flávio Santos</Link>
                             </div>
                         </div>
                         <div className='privacy'>
