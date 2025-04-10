@@ -1,12 +1,7 @@
-import fs from 'fs';
-import path from 'path';
-import Image from 'next/image';
-import NotFoundPage from '@/app/not-found';
-export const dynamicParams = true
-export const dynamic = 'force-dynamic';
-import { notFound } from 'next/navigation';
-
-
+import { notFound } from "next/navigation";
+import fs from "fs";
+import path from "path";
+import Image from "next/image";
 
 // Tipo para o perfil
 interface Profile {
@@ -25,17 +20,25 @@ interface Profile {
 
 // Função para buscar os dados do perfil a partir do ID
 const fetchProfileData = async (id: string) => {
-    const filePath = path.join(process.cwd(), 'data', 'profile.json');
-    const fileData = await fs.promises.readFile(filePath, 'utf8');
-    const profiles: Profile[] = JSON.parse(fileData);
-    return profiles.find((profile) => profile.id === id) || null;
+    const filePath = path.join(process.cwd(), "data", "profile.json");
+
+    try {
+        const fileData = fs.readFileSync(filePath, "utf8");
+        const profiles: Profile[] = JSON.parse(fileData);
+        return profiles.find((profile) => profile.id === id) || null;
+    } catch (error) {
+        console.error("Erro ao ler o arquivo de perfil:", error);
+        return null;
+    }
 };
 
 // Função de geração de metadata, para alterar o título e descrição dinamicamente
-export async function generateMetadata({ params }: { params: { id: string } }) {
-    const profile = await fetchProfileData(params?.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+    const resolvedParams = await params; // Espera a Promise resolver
+    const profile = await fetchProfileData(resolvedParams.id);
+
     if (!profile) {
-        notFound();
+        notFound(); // Retorna a página de "Não Encontrado"
     }
 
     return {
@@ -46,23 +49,28 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
 
 // Função para gerar os parâmetros estáticos, que o Next.js vai usar para gerar as páginas dinâmicas
 export async function generateStaticParams() {
-    const filePath = path.join(process.cwd(), 'data', 'profile.json');
-    const fileData = await fs.promises.readFile(filePath, 'utf8');
-    const profiles: Profile[] = JSON.parse(fileData);
+    const filePath = path.join(process.cwd(), "data", "profile.json");
 
-    return profiles.map((profile) => ({
-        id: profile.id,
-    }));
+    try {
+        const fileData = fs.readFileSync(filePath, "utf8");
+        const profiles: Profile[] = JSON.parse(fileData);
+
+        return profiles.map((profile) => ({
+            id: profile.id,
+        }));
+    } catch (error) {
+        console.error("Erro ao gerar parâmetros estáticos para os perfis:", error);
+        return [];
+    }
 }
 
 // Função da página dinâmica do perfil
-const ProfilePage = async ({ params }: { params: { id: string } }) => {
-    const profile = await fetchProfileData(params?.id);
+const ProfilePage = async ({ params }: { params: Promise<{ id: string }> }) => {
+    const resolvedParams = await params; // Aguarda a resolução de params
+    const profile = await fetchProfileData(resolvedParams.id);
 
     if (!profile) {
-        return (
-            <NotFoundPage />
-        );
+        return <p>Perfil não encontrado.</p>; // Se o perfil não for encontrado, exibe uma mensagem de erro
     }
 
     return (
