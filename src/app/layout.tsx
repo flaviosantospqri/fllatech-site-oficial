@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Fllatech Soluções Em Tecnologia",
     images: [
       {
-        url: "/assets/img/logosemfundo.png",
+        url: "https://fllatech.com/assets/img/fllatechog.png",
         width: 1200,
         height: 630,
       },
