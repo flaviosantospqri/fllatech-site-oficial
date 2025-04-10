@@ -1,0 +1,16 @@
+name: Deploy locaweb novo
+on: push
+jobs:
+  deploy:
+    name: Deploy locaweb novo
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: FTP Deploy Locaweb novo
+      uses: locaweb/ftp-deploy@1.0.0
+      with:
+        host: ${{ secrets.FTP_SERVER }} 
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: ".next/"
