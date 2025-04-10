@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Fllatech Soluções",
-  description: "Fllatech Soluções -  Marketing & Desenvolvimento de Software",
+  description: "Fllatech Soluções - Marketing & Desenvolvimento de Software",
   icons: {
-    icon: "../assets/img/logosemfundo.png",
-    shortcut: "../assets/img/logosemfundo.png",
-    apple: "../assets/img/apple-touch-icon.png",
+    icon: "/assets/img/logosemfundo.png",
+    shortcut: "/assets/img/logosemfundo.png",
+    apple: "/assets/img/apple-touch-icon.png",
   },
   openGraph: {
     title: "Fllatech Soluções",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Fllatech Soluções Em Tecnologia",
     images: [
       {
-        url: "../assets/img/logosemfundo.png",
+        url: "/assets/img/logosemfundo.png",
         width: 1200,
         height: 630,
       },
