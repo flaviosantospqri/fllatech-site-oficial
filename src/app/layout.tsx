@@ -13,16 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fllatech Soluções",
-  description: "Fllatech Soluções - Marketing & Desenvolvimento de Software",
+  title: "Marketing Digital e Desenvolvimento de Software em Juiz de Fora | Fllatech Soluções",
+  description: "Especialistas em Marketing Digital, Sites, Lojas Virtuais e Sistemas Sob Medida. Transformamos ideias em tecnologia que gera resultado.",
+  other: {
+    keywords: "Fllatech, Fllatech Soluções, Marketing Digital em Juiz de Fora, Marketing, Gestão de Redes Sociais em Juiz de Fora, Gestão de Instagram, O que é Gestão de Midia Social, O que é Social Midia, Artes Gráficas, Artes Digitais, Designer Bom, Desenvolvimento de Software, Sites, Lojas Virtuais, Sistemas Sob Medida, Juiz de Fora",
+  },
   icons: {
     icon: "https://fllatech.com/assets/favicon.ico",
     shortcut: "https://fllatech.com/assets/img/favicon-32x32.png",
     apple: "https://fllatech.com/assets/img/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Fllatech Soluções",
-    description: "Fllatech Soluções - Marketing & Desenvolvimento de Software",
+    title: "Marketing Digital e Desenvolvimento de Software em Juiz de Fora | Fllatech Soluções",
+    description: "Especialistas em Marketing Digital, Sites, Lojas Virtuais e Sistemas Sob Medida. Transformamos ideias em tecnologia que gera resultado.",
     url: "https://fllatech.com",
     siteName: "Fllatech Soluções Em Tecnologia",
     images: [
