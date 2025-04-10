@@ -1,5 +1,6 @@
 
 import { About } from "@/components/About";
+import { CookieConsent } from "@/components/Cookie";
 import Faq from "@/components/Faqs";
 import Footer from "@/components/Footer";
 import { Hero } from "@/components/Hero";
@@ -7,6 +8,7 @@ import { LightSpots } from "@/components/LightSpot";
 import Navbar from "@/components/NavBar";
 import Porfolio from "@/components/Porfolio";
 import Process from "@/components/Process";
+import { ReadingProgressBar } from "@/components/ReadingBar";
 import { Service } from "@/components/Service";
 import { LightParticles } from "@/components/SoftLightSpot";
 import Script from "next/script";
@@ -39,9 +41,10 @@ export default function Home() {
           }),
         }}
       />
-
+      <CookieConsent />
       <LightSpots />
       <LightParticles />
+      <ReadingProgressBar />
       <Navbar />
       <Hero />
       <About />
