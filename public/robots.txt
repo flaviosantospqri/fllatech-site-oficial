@@ -7,7 +7,3 @@ Host: https://fllatech.com
 
 # Sitemaps
 Sitemap: https://fllatech.com/sitemap.xml
-
-User-agent: *
-Disallow: /admin/
-Sitemap: https://fllatech.com/sitemap.xml
