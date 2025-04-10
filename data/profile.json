@@ -1,0 +1,28 @@
+[
+  {
+    "id": "flavio",
+    "name": "Flávio Santos",
+    "photo": "/images/joao.jpg",
+    "profession": "Desenvolvedor Full Stack",
+    "bio": "João é um desenvolvedor experiente com 5 anos de experiência em desenvolvimento de software. Ele adora resolver problemas complexos e criar soluções inovadoras.",
+    "skills": ["JavaScript", "React", "Node.js", "Express", "MongoDB"],
+    "contact": {
+      "email": "flavio@fllatech.com",
+      "linkedin": "https://www.linkedin.com/in/flaviosantos",
+      "github": "https://github.com/flaviosantospri"
+    }
+  },
+  {
+    "id": "laura",
+    "name": "Laura Barbosa",
+    "photo": "/images/maria.jpg",
+    "profession": "Designer UX/UI",
+    "bio": "Maria é uma designer talentosa com um olhar criativo para interfaces e experiência do usuário. Ela tem um grande compromisso com a usabilidade e a estética.",
+    "skills": ["Figma", "Sketch", "Adobe XD", "UX Research"],
+    "contact": {
+      "email": "maria@example.com",
+      "linkedin": "https://www.linkedin.com/in/laurabarbosa",
+      "github": "https://github.com/laurabarbosa"
+    }
+  }
+]
