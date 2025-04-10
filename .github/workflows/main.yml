@@ -36,9 +36,10 @@ jobs:
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: .next/ # Local directory where Astro outputs the build
-          server-dir: /home/fllatech1/ # Root folder on the server
+          localDir: .next/ # Local directory where Astro outputs the build
+          remoteDir: public_html # Root folder on the server
+          forceSsl: false # Use SSL for secure connection
           protocol: ftp
