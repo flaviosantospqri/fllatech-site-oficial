@@ -2,15 +2,26 @@ import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
 import Image from "next/image";
+import Link from "next/link";
+import './style.scss'; // Importando o CSS para estilização
+import CardProfile from "@/components/CardProfile";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-// Tipo para o perfil
+interface ProfileSkill {
+    title: string;
+    description: string;
+    icon?: string;
+    group?: string;
+}
 interface Profile {
     id: string;
     name: string;
     photo: string;
     profession: string;
     bio: string;
-    skills: string[];
+    skills: ProfileSkill[];
     contact: {
         email: string;
         linkedin: string;
@@ -18,7 +29,6 @@ interface Profile {
     };
 }
 
-// Função para buscar os dados do perfil a partir do ID
 const fetchProfileData = async (id: string) => {
     const filePath = path.join(process.cwd(), "data", "profile.json");
 
@@ -32,13 +42,12 @@ const fetchProfileData = async (id: string) => {
     }
 };
 
-// Função de geração de metadata, para alterar o título e descrição dinamicamente
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
-    const resolvedParams = await params; // Espera a Promise resolver
+    const resolvedParams = await params;
     const profile = await fetchProfileData(resolvedParams.id);
 
     if (!profile) {
-        notFound(); // Retorna a página de "Não Encontrado"
+        notFound();
     }
 
     return {
@@ -47,7 +56,6 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     };
 }
 
-// Função para gerar os parâmetros estáticos, que o Next.js vai usar para gerar as páginas dinâmicas
 export async function generateStaticParams() {
     const filePath = path.join(process.cwd(), "data", "profile.json");
 
@@ -64,34 +72,55 @@ export async function generateStaticParams() {
     }
 }
 
-// Função da página dinâmica do perfil
+
+
 const ProfilePage = async ({ params }: { params: Promise<{ id: string }> }) => {
-    const resolvedParams = await params; // Aguarda a resolução de params
+    const resolvedParams = await params;
     const profile = await fetchProfileData(resolvedParams.id);
 
+
+
+
     if (!profile) {
-        return <p>Perfil não encontrado.</p>; // Se o perfil não for encontrado, exibe uma mensagem de erro
+        return <p>Perfil não encontrado.</p>;
     }
 
+
     return (
-        <div>
-            <h1>Sobre {profile.name}</h1>
+        <div className="profile-page">
+            <ul className="menu">
+                <li className="about"><Link href={`/profile/${profile.id}`}> Sobre</Link></li>
+                <li className="blog"><Link href={`/blog='${profile.id}'`}>Blog</Link></li>
+            </ul>
             <div>
-                <Image src={profile.photo} alt={profile.name} width={150} height={150} />
-                <h2>{profile.name}</h2>
-                <p>{profile.profession}</p>
-                <p>{profile.bio}</p>
-                <h3>Habilidades</h3>
-                <ul>
-                    {profile.skills.map((skill, index) => (
-                        <li key={index}>{skill}</li>
-                    ))}
-                </ul>
+                <div className="container-img">
+                    <figure className="img-container">
+                        <Image src={profile.photo} alt={profile.name} width={150} height={150} />
+                    </figure>
+                </div>
+                <div className="info-profile">
+                    <h2>{profile.name}</h2>
+                    <p className="profession">{profile.profession}</p>
+                    <p>{profile.bio}</p>
+                </div>
+                <div className="info-skills">
+                    <h3>Habilidades</h3>
+                    <ul className="skills-list">
+                        {profile.skills.map((skill, index) => (
+                            <CardProfile
+                                title={skill.title}
+                                description={skill.description}
+                                key={index}
+                                icon={skill.icon}
+                            />
+                        ))}
+                    </ul>
+                </div>
                 <h3>Contatos</h3>
-                <ul>
-                    <li>Email: <a href={`mailto:${profile.contact.email}`}>{profile.contact.email}</a></li>
-                    <li>LinkedIn: <a href={profile.contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li>GitHub: <a href={profile.contact.github} target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <ul className="contact-list">
+                    <a href={`mailto:${profile.contact.email}`}> <FontAwesomeIcon icon={faEnvelopeOpen} width={35} /></a>
+                    <a href={profile.contact.linkedin}><FontAwesomeIcon icon={faLinkedin} width={35} /></a>
+                    <a href={profile.contact.github}><FontAwesomeIcon icon={faGithub} width={35} /></a>
                 </ul>
             </div>
         </div>

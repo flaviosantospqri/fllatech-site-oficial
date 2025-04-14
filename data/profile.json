@@ -2,12 +2,37 @@
   {
     "id": "flavio",
     "name": "Flávio Santos",
-    "photo": "/images/joao.jpg",
+    "photo": "/images/flavio.jpg",
     "profession": "Desenvolvedor Full Stack",
-    "bio": "João é um desenvolvedor experiente com 5 anos de experiência em desenvolvimento de software. Ele adora resolver problemas complexos e criar soluções inovadoras.",
-    "skills": ["JavaScript", "React", "Node.js", "Express", "MongoDB"],
+    "bio": "Flávio é um desenvolvedor experiente com 5 anos de experiência em desenvolvimento de software. Ele adora resolver problemas complexos e criar soluções inovadoras.",
+    "skills": [
+      {
+        "title": "JavaScript",
+        "description": "Flávio é um desenvolvedor Full Stack com experiência em JavaScript, React e Node.js. Ele tem um forte entendimento de desenvolvimento web e é apaixonado por criar aplicações escaláveis.",
+        "icon": "javascript",
+        "group": "tecnology"
+      },
+      {
+        "title": "React",
+        "description": "Flávio é um desenvolvedor Full Stack com experiência em JavaScript, React e Node.js. Ele tem um forte entendimento de desenvolvimento web e é apaixonado por criar aplicações escaláveis.",
+        "icon": "react",
+        "group": "tecnology"
+      },
+      {
+        "title": "Node.js",
+        "description": "Flávio é um desenvolvedor Full Stack com experiência em JavaScript, React e Node.js. Ele tem um forte entendimento de desenvolvimento web e é apaixonado por criar aplicações escaláveis.",
+        "icon": "nodejs",
+        "group": "tecnology"
+      },
+      {
+        "title": "Scrum",
+        "description": "Flávio é um desenvolvedor Full Stack com experiência em JavaScript, React e Node.js. Ele tem um forte entendimento de desenvolvimento web e é apaixonado por criar aplicações escaláveis.",
+        "icon": "nodejs",
+        "group": "tecnology"
+      }
+    ],
     "contact": {
-      "email": "flavio@fllatech.com",
+      "email": "tecnologia@fllatech.com",
       "linkedin": "https://www.linkedin.com/in/flaviosantos",
       "github": "https://github.com/flaviosantospri"
     }
@@ -15,12 +40,37 @@
   {
     "id": "laura",
     "name": "Laura Barbosa",
-    "photo": "/images/maria.jpg",
-    "profession": "Designer UX/UI",
-    "bio": "Maria é uma designer talentosa com um olhar criativo para interfaces e experiência do usuário. Ela tem um grande compromisso com a usabilidade e a estética.",
-    "skills": ["Figma", "Sketch", "Adobe XD", "UX Research"],
+    "photo": "/images/laura.jpg",
+    "profession": "Administradora",
+    "bio": "Laura é uma administradora experiente com habilidades em gestão de negócios e organização. Ela é dedicada a otimizar processos e alcançar resultados eficientes.",
+    "skills": [
+      {
+        "title": "Microsoft Excel",
+        "description": "Laura possui habilidades avançadas em Microsoft Excel, incluindo criação de planilhas, análise de dados e automação de tarefas.",
+        "icon": "excel",
+        "group": "tools"
+      },
+      {
+        "title": "Trello",
+        "description": "Laura utiliza o Trello para gerenciar projetos e organizar tarefas de forma eficiente.",
+        "icon": "trello",
+        "group": "tools"
+      },
+      {
+        "title": "Slack",
+        "description": "Laura é experiente no uso do Slack para comunicação e colaboração em equipe.",
+        "icon": "slack",
+        "group": "tools"
+      },
+      {
+        "title": "Google Workspace",
+        "description": "Laura domina o Google Workspace, incluindo Gmail, Google Drive e Google Docs, para otimizar fluxos de trabalho.",
+        "icon": "google",
+        "group": "tools"
+      }
+    ],
     "contact": {
-      "email": "maria@example.com",
+      "email": "administrativo@fllatech.com",
       "linkedin": "https://www.linkedin.com/in/laurabarbosa",
       "github": "https://github.com/laurabarbosa"
     }
