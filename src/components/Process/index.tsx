@@ -20,16 +20,25 @@ interface ProcessData {
 const Process = () => {
     const processData: ProcessData[] = [
         {
-            title: "ENTENDEMOS E OBSERVAMOS",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+            title: "OBSERVAMOS E ANALISAMOS",
+            description: `Por meio de reuniões, conversas, análises, identificamos como está seu
+            empreendimento, seus pontos fortes e fracos, onde podemos chegar, qual plano
+            devemos traçar para impulsionar sua marca. Seja começando tudo do zero ou
+            aperfeiçoando e seguindo.`
         },
         {
-            title: "NÓS PLANEJAMOS E CRIAMOS, VOCÊ NOS DIRECIONA",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+            title: "PLANEJAMOS E DESENVOLVEMOS",
+            description: `
+            Após análise detalhada, vamos para o planejamento e desenvolvimento. Criamos tudo
+            personalizado para você, desde campanhas de vendas e trafego, cronograma de rede
+            social, ao design e desenvolvimento do seu site ou sistema.`
         },
         {
-            title: "NÓS TE COLOCAMOS NO DIGITAL, VOCÊ ESCOLHE O QUE FAZER",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+            title: "TE LEVAMOS AO DIGITAL",
+            description: `Depois do seu projeto desenvolvido, te colocamos no digital, levamos a sua marca
+            para o mundo, fazendo seu site ou rede social atrair mais clientes e mais vendas. Te
+            dando suporte em cada processo, analisando metas e segmentações que faça sentido
+            para a sua atuação e te leve mais longe.`
         },
 
     ]
@@ -41,7 +50,7 @@ const Process = () => {
                 "Com campanhas otimizadas, conteúdo de qualidade e gestão eficiente das suas redes, você não apenas aparece mais, mas se torna referência no seu mercado. Enquanto cuidamos do seu marketing, você aproveita os resultados: mais reconhecimento, mais clientes e mais crescimento para o seu negócio.",
             image:
                 "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            link: "https://www.google.com",
+            link: "https://api.whatsapp.com/send?phone=5532984738948&text=Olá, quero saber mais",
         },
     ];
 
@@ -57,14 +66,9 @@ const Process = () => {
             </Reveal>
             <Reveal variant="slideLeft" delay={0.2}>
                 <p className="process-text-description">
-                    Nossa empresa, Fllatech, é mais do que uma simples prestadora de
-                    serviços. Nós somos seus parceiros estratégicos, comprometidos em
-                    entender suas necessidades e objetivos. Trabalhamos lado a lado com
-                    você, oferecendo soluções personalizadas que realmente fazem a diferença
-                    no seu negócio. Nossa equipe é formada por especialistas apaixonados
-                    pelo que fazem, prontos para transformar sua visão em realidade. Com a
-                    Fllatech, você não está apenas contratando um serviço; você está
-                    investindo em um relacionamento de confiança e resultados duradouros.
+                    A Fllatech cuida de cada detalhe do seu projeto, fazemos todo um diagnóstico, uma
+                    profunda analise de como seu negócio se encontra hoje, para elaborar um Plano de
+                    Ação que visa alcançar seus próximos objetivos.
                 </p>
             </Reveal>
             <Reveal variant="slideRight" delay={0.2}>
@@ -76,8 +80,8 @@ const Process = () => {
                                     src={item.image}
                                     loading="lazy"
                                     alt={item.title}
-                                    width={600}
-                                    height={600}
+                                    width={700}
+                                    height={700}
                                 />
                             </div>
                             <div className="process-item-text">

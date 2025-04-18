@@ -14,7 +14,7 @@ const Faq = () => {
     const data: DataAnswer[] = [
         {
             question: "Como posso entrar em contato?",
-            response: "Você pode nos contatar através do formulário de contato em nosso site ou pelo e-mail support@example.com. Também estamos disponíveis para chats ao vivo durante o horário comercial."
+            response: "Você pode nos contatar através do formulário de contato em nosso site ou pelo e-mail contato@fllatech.com. Também estamos disponíveis para chats ao vivo durante o horário comercial por meio do Telefone/Whatsapp (32) 9 8473-8948."
         },
         {
             question: "Quais são os horários de atendimento?",

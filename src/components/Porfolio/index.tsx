@@ -21,7 +21,7 @@ const Porfolio = () => {
                 "Com campanhas otimizadas, conteúdo de qualidade e gestão eficiente das suas redes, você não apenas aparece mais, mas se torna referência no seu mercado. Enquanto cuidamos do seu marketing, você aproveita os resultados: mais reconhecimento, mais clientes e mais crescimento para o seu negócio.",
             image:
                 "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            link: "https://www.google.com",
+            link: "https://api.whatsapp.com/send?phone=5532984738948&text=Olá, quero saber mais",
         },
         {
             title: "IDENTIDADE FORTE",
@@ -30,7 +30,7 @@ const Porfolio = () => {
                 "Do design ao tom de voz, cada detalhe é pensado para que sua marca se destaque da concorrência e gere conexão com seus clientes. Enquanto cuidamos da sua identidade no digital, você foca no crescimento e nos resultados do seu negócio.",
             image:
                 "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            link: "https://www.google.com",
+            link: "https://api.whatsapp.com/send?phone=5532984738948&text=Olá, quero saber mais",
         },
         {
             title: "AGILIDADE! MAIS TEMPO LIVRE",
@@ -39,7 +39,7 @@ const Porfolio = () => {
                 "Além disso, você não precisa lidar com retrabalho, erros ou a gestão de uma equipe interna.Com a Fllatech, seu marketing funciona como um motor de crescimento constante, enquanto você ganha mais tempo para investir na operação, melhorar o atendimento e inovar no seu mercado.",
             image:
                 "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            link: "https://www.google.com",
+            link: "https://api.whatsapp.com/send?phone=5532984738948&text=Olá, quero saber mais",
         },
     ];
 
@@ -52,20 +52,18 @@ const Porfolio = () => {
                 </p>
             </div>
             <Reveal variant="fadeIn" delay={0.2}>
-                <h1>Aqui você é levado a sério</h1>
+                <h1>Estaremos com você em cada processo</h1>
             </Reveal>
 
             <Reveal variant="slideLeft" delay={0.2}>
 
                 <p className="portfolio-text-description">
-                    Nossa empresa, Fllatech, é mais do que uma simples prestadora de
-                    serviços. Nós somos seus parceiros estratégicos, comprometidos em
-                    entender suas necessidades e objetivos. Trabalhamos lado a lado com
-                    você, oferecendo soluções personalizadas que realmente fazem a diferença
-                    no seu negócio. Nossa equipe é formada por especialistas apaixonados
-                    pelo que fazem, prontos para transformar sua visão em realidade. Com a
-                    Fllatech, você não está apenas contratando um serviço; você está
-                    investindo em um relacionamento de confiança e resultados duradouros.
+                    Nós da Fllatech, não queremos apenas prestar um serviço. Queremos caminhar juntos
+                    em cada etapa, em cada degrau, em cada resultado. Fazer sua empresa crescer, é a
+                    nossa prioridade, estudamos as melhores estratégias para o seu ramo de atuação,
+                    fazemos uma análise rica em detalhes para entender sua necessidade e planejar o
+                    passo a passo para alcançar seus objetivos. Você não estará apenas contratando um
+                    serviço, mas investindo numa parceria de sucesso, confiança e resultados.
                 </p>
             </Reveal>
             <ul className="portfolio-container">

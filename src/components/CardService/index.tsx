@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import { faCheckCircle, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { openWhatsAppChat } from '@/utils/whatsappRedirect';
 
 
 interface CardServiceProps {
@@ -23,7 +24,7 @@ export const CardService: React.FC<CardServiceProps> = ({ title, description, de
                 <h2 className="card-service-title">{title}</h2>
                 <p className="card-service-description">{description}</p>
                 <h2 className='card-service-price'>
-                    R$ {price},00
+                    R$ {price}0 <span className='period'>/Mês</span>
                 </h2>
             </div>
             <ul>
@@ -38,7 +39,7 @@ export const CardService: React.FC<CardServiceProps> = ({ title, description, de
 
             </ul>
             <div className="card-btn">
-                <button>Saiba mais</button>
+                <button onClick={() => openWhatsAppChat('Olá, quero saber mais sobre os pacotes.')}>Saiba mais</button>
             </div>
         </div>
     );

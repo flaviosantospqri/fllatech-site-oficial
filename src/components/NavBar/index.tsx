@@ -3,6 +3,7 @@ import Link from 'next/link';
 import './style.scss';
 import { useState } from 'react';
 import { FiMenu, FiX } from "react-icons/fi"
+import { openWhatsAppChat } from '@/utils/whatsappRedirect';
 
 
 export default function Navbar() {
@@ -34,7 +35,7 @@ export default function Navbar() {
 
 
                 <div className="cta-button">
-                    <button>Contato</button>
+                    <button onClick={() => openWhatsAppChat('Olá, quero fazer um orçamento.')}>Orçamento</button>
                 </div>
 
             </div>
@@ -46,7 +47,7 @@ export default function Navbar() {
                     <Link href="#faq" className="mobile-menu-item">Duvidas Frequentes</Link>
                     <Link href="#process" className="mobile-menu-item">Nosso Processo</Link>
                     <Link href="#footer" className="mobile-menu-item">Contatos</Link>
-                    <button className="cta-mobile">Orçamento</button>
+                    <button className="cta-mobile" onClick={() => openWhatsAppChat('Olá, quero fazer um orçamento.')}>Orçamento</button>
                 </div>
             )}
         </nav>

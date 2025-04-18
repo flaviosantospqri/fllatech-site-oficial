@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import "./style.scss";
@@ -5,16 +6,27 @@ import servicesImg from "../../assets/svg/services.svg";
 import { CardService } from "../CardService";
 import { CardCharacter } from "../CardCharacter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCamera, faDesktop, faListCheck } from "@fortawesome/free-solid-svg-icons";
-
+import {
+    faCamera,
+    faDesktop,
+    faListCheck,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Service: React.FC = () => {
     const allServices = {
-        "destaqueServices": [
+        destaqueServices: [
             {
                 title: "Pacote Web",
-                description: "Desenvolvemos sites e sistemas web personalizados para o seu negócio.",
-                icon: <Image src={servicesImg} width={25} height={25} alt="service us icon" />,
+                description:
+                    "Desenvolvemos sites e sistemas web personalizados para o seu negócio.",
+                icon: (
+                    <Image
+                        src={servicesImg}
+                        width={25}
+                        height={25}
+                        alt="service us icon"
+                    />
+                ),
                 descriptionDetails: [
                     "Sites responsivos",
                     "Sistemas web",
@@ -26,8 +38,16 @@ export const Service: React.FC = () => {
             },
             {
                 title: "Pacote Redes Sociais",
-                description: "Desenvolvemos sites e sistemas web personalizados para o seu negócio.",
-                icon: <Image src={servicesImg} width={25} height={25} alt="service us icon" />,
+                description:
+                    "Desenvolvemos sites e sistemas web personalizados para o seu negócio.",
+                icon: (
+                    <Image
+                        src={servicesImg}
+                        width={25}
+                        height={25}
+                        alt="service us icon"
+                    />
+                ),
                 descriptionDetails: [
                     "Sites responsivos",
                     "Sistemas web",
@@ -39,8 +59,16 @@ export const Service: React.FC = () => {
             },
             {
                 title: "Tráfego e Divulgação",
-                description: "Desenvolvemos sites e sistemas web personalizados para o seu negócio.",
-                icon: <Image src={servicesImg} width={25} height={25} alt="service us icon" />,
+                description:
+                    "Desenvolvemos sites e sistemas web personalizados para o seu negócio.",
+                icon: (
+                    <Image
+                        src={servicesImg}
+                        width={25}
+                        height={25}
+                        alt="service us icon"
+                    />
+                ),
                 descriptionDetails: [
                     "Sites responsivos",
                     "Sistemas web",
@@ -51,45 +79,89 @@ export const Service: React.FC = () => {
                 price: 1300,
             },
         ],
-        'ourServices': [
+        ourServices: [
             {
                 title: "MARKETING DIGITAL",
                 subtitle: "Marketing Digital para alavancar o seu negócio.",
                 description: "Apareça nas primeiras páginas do Google.",
-                icon: <FontAwesomeIcon icon={faDesktop} width={50} height={50} color="#69df16" />,
+                icon: (
+                    <FontAwesomeIcon
+                        icon={faDesktop}
+                        width={50}
+                        height={50}
+                        color="#69df16"
+                    />
+                ),
             },
             {
                 title: "SOLUÇÕES WEB",
-                subtitle: "Desenvolvemos sites e sistemas web personalizados para o seu negócio.",
+                subtitle:
+                    "Desenvolvemos sites e sistemas web personalizados para o seu negócio.",
                 description: "Apareça nas primeiras páginas do Google.",
-                icon: <FontAwesomeIcon icon={faCamera} width={50} height={50} color="#69df16" />,
+                icon: (
+                    <FontAwesomeIcon
+                        icon={faCamera}
+                        width={50}
+                        height={50}
+                        color="#69df16"
+                    />
+                ),
             },
             {
                 title: "CONSULTORIA ESTRATÉGICA",
                 subtitle: "Consultoria estratégica para o seu negócio.",
                 description: "Apareça nas primeiras páginas do Google.",
-                icon: <FontAwesomeIcon icon={faListCheck} width={50} height={50} color="#69df16" />,
+                icon: (
+                    <FontAwesomeIcon
+                        icon={faListCheck}
+                        width={50}
+                        height={50}
+                        color="#69df16"
+                    />
+                ),
             },
             {
                 title: "CRIAÇÃO DE CONTEÚDO",
                 subtitle: "Conteúdos exclusivos e personalizados para o seu negócio.",
                 description: "Apareça nas primeiras páginas do Google.",
-                icon: <FontAwesomeIcon icon={faListCheck} width={50} height={50} color="#69df16" />,
+                icon: (
+                    <FontAwesomeIcon
+                        icon={faListCheck}
+                        width={50}
+                        height={50}
+                        color="#69df16"
+                    />
+                ),
             },
             {
                 title: "SOLUÇÕES EM COMUNICAÇÃO",
-                subtitle: "Soluções em comunicação para o seu negócio, com foco em resultados.",
+                subtitle:
+                    "Soluções em comunicação para o seu negócio, com foco em resultados.",
                 description: "Apareça nas primeiras páginas do Google.",
-                icon: <FontAwesomeIcon icon={faListCheck} width={50} height={50} color="#69df16" />,
+                icon: (
+                    <FontAwesomeIcon
+                        icon={faListCheck}
+                        width={50}
+                        height={50}
+                        color="#69df16"
+                    />
+                ),
             },
             {
                 title: "UX/UI DESIGN",
                 subtitle: "Designe de interfaces e experiência do usuário.",
                 description: "Apareça nas primeiras páginas do Google.",
-                icon: <FontAwesomeIcon icon={faListCheck} width={50} height={50} color="#69df16" />,
+                icon: (
+                    <FontAwesomeIcon
+                        icon={faListCheck}
+                        width={50}
+                        height={50}
+                        color="#69df16"
+                    />
+                ),
             },
         ],
-    }
+    };
     return (
         <div>
             <div className="service-container" id="service">
@@ -106,27 +178,21 @@ export const Service: React.FC = () => {
                         </p>
                     </div>
 
-                    <h1>Nossos Principais Produtos</h1>
-
-
-                    <p>
-                        A Fllatech tem como missão levar aos empreendedores inovação e
-                        soluções em tecnologia. Se você deseja se destacar digitalmente, a
-                        Fllatech te ajuda!
-                    </p>
-
+                    <h1>Nossos principais serviços</h1>
 
                     <p>
-                        Nós estaremos juntos em cada processo, em prol do mesmo objetivo,
-                        alcançar as suas metas.
+                        Nossa missão é levar para os empreendedores soluções em tecnologia,
+                        que otimizem seu tempo e façam sua empresa crescer e vender mais no
+                        digital. Nossos serviços têm esse objetivo, fazer sua empresa
+                        destacar, crescer, vender mais.
                     </p>
 
+                    <p>A Fllatech te ajuda a alcançar suas metas.</p>
                 </div>
                 <div className="service-card-gallery">
-
                     <CardService
-                        title="Pacote Web"
-                        description="Desenvolvemos sites e sistemas web personalizados para o seu negócio."
+                        title="Pacote Essencial"
+                        description="Para quem quer começar a crescer no digital com consistência, estratégia e baixo custo."
                         icon={
                             <Image
                                 src={servicesImg}
@@ -136,18 +202,18 @@ export const Service: React.FC = () => {
                             />
                         }
                         descriptionDetails={[
-                            "Sites responsivos",
-                            "Sistemas web",
-                            "E-commerce",
-                            "Landing page",
+                            "1 Post por semana - Instagram",
+                            "2 stories por semana - Instagram",
+                            "1 Consultoria por mês",
+                            "Cronograma de Posts",
                         ]}
                         target={false}
-                        price={400}
+                        price={499.9}
                     />
 
                     <CardService
-                        title="Pacote Redes Sociais"
-                        description="Desenvolvemos sites e sistemas web personalizados para o seu negócio."
+                        title="Pacote Clássico"
+                        description="Presença forte, estratégia mensal e benefícios extras pra acelerar seu digital."
                         icon={
                             <Image
                                 src={servicesImg}
@@ -157,17 +223,19 @@ export const Service: React.FC = () => {
                             />
                         }
                         descriptionDetails={[
-                            "Sites responsivos",
-                            "Sistemas web",
-                            "E-commerce",
-                            "Landing page",
+                            "3 Posts por semana",
+                            "5 Stories por semana",
+                            "1 Consultoria por mês ",
+                            "Cronograma de Postagens",
+                            "Desconto em serviços de Desenvolvimento(Landing Page, Site, etc)",
+                            "Desconto em serviços de Tráfego Pago",
                         ]}
                         target={true}
-                        price={800}
+                        price={899.9}
                     />
 
                     <CardService
-                        title="Tráfego e Divulgação"
+                        title="Pacote Fllatech"
                         description="Desenvolvemos sites e sistemas web personalizados para o seu negócio."
                         icon={
                             <Image
@@ -178,15 +246,18 @@ export const Service: React.FC = () => {
                             />
                         }
                         descriptionDetails={[
-                            "Sites responsivos",
-                            "Sistemas web",
-                            "E-commerce",
-                            "Landing page",
+                            "3 Posts por semana",
+                            "5 Stories por semana",
+                            "Consultoria livre(sem limite)",
+                            "Cronograma de Postagens",
+                            "Landing page de Alta Conversão",
+                            "Suporte 24/7",
+                            "Desconto em serviços de Tráfego Pago",
+                            "Descontos especiais",
                         ]}
                         target={false}
-                        price={1300}
+                        price={1990.9}
                     />
-
                 </div>
 
                 <div className="service-text">
@@ -201,22 +272,21 @@ export const Service: React.FC = () => {
                             Funcionalidades
                         </p>
                     </div>
-                    <h1>Funcionalidades Inclusas</h1>
+                    <h1>Nosso diferencial e funcionalidades importantes</h1>
                     <p>
-                        A Fllatech tem como missão levar aos empreendedores inovação e
-                        soluções em tecnologia. Se você deseja se destacar digitalmente, a
-                        Fllatech te ajuda!
+                        Valorizamos um serviço de extrema qualidade, com inovação, materias
+                        personalizados, atendimento que dê atenção a sua demanda de forma
+                        única.
                     </p>
                     <p>
-                        Nós estaremos juntos em cada processo, em prol do mesmo objetivo,
-                        alcançar as suas metas.
+                        Te entregamos o melhor serviço para você obter os melhores
+                        resultados.
                     </p>
                 </div>
                 <div className="service-card-gallery">
-
                     <CardCharacter
                         title="Responsividade & SEO"
-                        subtitle="Otimização de Sites, sites responsivos e com as melhores práticas de SEO."
+                        subtitle="Todos os nossos sites são responsivos, se adaptam aos dispositivos. Otimização SEO, seu site sempre no topo."
                         description="Apareça nas primeiras páginas do Google."
                         icon={
                             <FontAwesomeIcon
@@ -228,11 +298,10 @@ export const Service: React.FC = () => {
                         }
                     />
 
-
                     <CardCharacter
                         title="Exclusividade"
-                        subtitle="Sem materiais prontos, aqui é tudo personalizado e exclusivo."
-                        description="Apareça nas primeiras páginas do Google."
+                        subtitle="Prezamos por materiais exclusivos, para cada cliente. Não oferecemos materiais ou design prontos, trabalhamos de forma personalizada"
+                        description="Prezamos por materiais exclusivos, para cada cliente. Não oferecemos materiais ou design prontos, trabalhamos de forma personalizada para melhor atender a sua marca. "
                         icon={
                             <FontAwesomeIcon
                                 icon={faCamera}
@@ -245,8 +314,8 @@ export const Service: React.FC = () => {
 
                     <CardCharacter
                         title="Atendimento"
-                        subtitle="Você é nossa prioridade, sempre!"
-                        description="Apareça nas primeiras páginas do Google."
+                        subtitle="Atendimento qualificado, sua demanda é atendida com total atenção, respeito e todo nosso profissionalismo."
+                        description="Mais do que um cliente você é um parceiro, e como tal, sua demanda é atendida com total atenção, respeito e todo nosso profissionalismo."
                         icon={
                             <FontAwesomeIcon
                                 icon={faListCheck}
@@ -256,7 +325,6 @@ export const Service: React.FC = () => {
                             />
                         }
                     />
-
                 </div>
                 <div className="service-text">
                     <div className="bullet-service">
@@ -270,38 +338,30 @@ export const Service: React.FC = () => {
                             Tudo que você precisa
                         </p>
                     </div>
-                    <h1>O que entregamos em cada processo</h1>
+                    <h1>Soluções para sua empresa</h1>
                     <p>
-                        A Fllatech tem como missão levar aos empreendedores inovação e
-                        soluções em tecnologia. Se você deseja se destacar digitalmente, a
-                        Fllatech te ajuda!
+                        Queremos que a sua marca seja reconhecida, seja destaque em crescimento e
+                        vendas no digital.
                     </p>
                     <p>
-                        Nós estaremos juntos em cada processo, em prol do mesmo objetivo,
-                        alcançar as suas metas.
+                        Entregamos soluções estratégicas que te coloca a frente dos seus concorrentes, que
+                        leva profissionalismo e autoridade.
+
                     </p>
                 </div>
 
                 <div className="service-card-gallery">
-
-                    {
-                        allServices.ourServices.map((service, index) => (
-
-                            <CardCharacter
-                                key={index}
-                                title={service.title}
-                                subtitle={service.subtitle}
-                                description={service.description}
-                                icon={service.icon}
-                            />
-
-                        ))
-                    }
+                    {allServices.ourServices.map((service, index) => (
+                        <CardCharacter
+                            key={index}
+                            title={service.title}
+                            subtitle={service.subtitle}
+                            description={service.description}
+                            icon={service.icon}
+                        />
+                    ))}
                 </div>
-
-
             </div>
-
         </div>
     );
 };

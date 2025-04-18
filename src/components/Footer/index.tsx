@@ -23,19 +23,19 @@ const Footer = () => {
                     <div className='footer-links'>
                         <div className="contact-phone">
                             <span>Fale com a gente</span>
-                            <a href="tel:+5511999999999">tel: +55 32 9 8473-8948</a>
+                            <a href="https://api.whatsapp.com/send?phone=5532984738948">32 98473-8948</a>
                         </div>
                         <div className="social-links">
                             <span>Siga a Fllatech</span>
                             <div className="links">
                                 <span>
-                                    <a href="https://www.instagram.com/fllatechsolucoes/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.instagram.com/fllatech/" target="_blank" rel="noopener noreferrer">
                                         <FontAwesomeIcon icon={faInstagram} />
                                     </a>
                                 </span>
 
                                 <span>
-                                    <a href="https://www.linkedin.com/company/fllatechsolucoes/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.linkedin.com/company/fllatech/" target="_blank" rel="noopener noreferrer">
                                         <FontAwesomeIcon icon={faLinkedin} />
                                     </a>
                                 </span>

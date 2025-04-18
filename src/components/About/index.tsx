@@ -18,15 +18,20 @@ export const About: React.FC = () => {
                         <h1>Porque nos esolher</h1>
                     </Reveal>
                     <Reveal variant='slideLeft' delay={0.2}>
-                        <p>A Fllatech tem como missão levar aos
-                            empreendedores inovação e soluções em tecnologia.
-                            Se você deseja se destacar digitalmente, a Fllatech te ajuda!
+                        <p>A Fllatech nasceu em 2016, fundada por Flávio Santos sob o nome Insert Desenvolvimentos,
+                            com a proposta de levar inovação e soluções tecnológicas ao mercado. Com uma trajetória
+                            sólida, evoluímos ao lado de empresas que buscavam diferenciação e performance.
+                            <br /> <br />
+                        </p>
+
+                        <p>
+                            Em 2024, nos reposicionamos como Fllatech Soluções em Tecnologia, ampliando nossa
+                            atuação para além do desenvolvimento web e de sistemas. Hoje, operamos como uma agência
+                            de marketing digital completa, integrando tecnologia, design, gestão de mídias sociais e tráfego pago.<br /><br />
+                            Nossa experiência, combinada à entrega de resultados consistentes, fez da Fllatech uma referência para
+                            empresas que entendem a importância de ter ao lado um parceiro estratégico, não apenas um fornecedor.
                         </p>
                     </Reveal>
-                    <p>
-                        Nós estaremos juntos em cada processo, em prol do mesmo
-                        objetivo, alcançar as suas metas.
-                    </p>
                 </div>
             </div>
         </div>
