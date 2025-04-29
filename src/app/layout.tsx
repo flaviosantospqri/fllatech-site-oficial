@@ -14,11 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Marketing Digital e Desenvolvimento de Software em Juiz de Fora | Fllatech Soluções",
-  description: "Especialistas em Marketing Digital, Sites, Lojas Virtuais e Sistemas Sob Medida. Transformamos ideias em tecnologia que gera resultado.",
+  title:
+    "Marketing Digital e Desenvolvimento de Software em Juiz de Fora | Fllatech Soluções",
+  description:
+    "Especialistas em Marketing Digital, Sites, Lojas Virtuais e Sistemas Sob Medida. Transformamos ideias em tecnologia que gera resultado.",
   other: {
-    keywords:
-      "Fllatech, Fllatech Soluções, Marketing Digital em Juiz de Fora, Marketing, Gestão de Redes Sociais em Juiz de Fora, Gestão de Instagram, O que é Gestão de Midia Social, O que é Social Midia, Artes Gráficas, Artes Digitais, Designer Bom, Desenvolvimento de Software, Sites, Lojas Virtuais, Sistemas Sob Medida, Juiz de Fora",
+    keywords: "Marketing Digital para empresas, marketing digital, Consultoria em Marketing Digital, Especialista em SEO e tráfego orgânico, Criação de sites profissionais e lojas virtuais, Gestão estratégica de redes sociais, Como melhorar o posicionamento do site no Google, Agência de marketing digital no Brasil, Dicas para aumentar conversões em sites e e-commerce, Desenvolvimento de software personalizado para empresas, SEO e marketing digital no Brasil, Agência de SEO para empresas de qualquer estado, Consultoria em tráfego orgânico para marcas brasileiras, Estratégias digitais para empresas em crescimento, Especialista em sites otimizados para o Google, Contratar especialista em SEO e tráfego orgânico, Empresa de marketing digital com foco em resultados, Consultoria de redes sociais para marcas, Automação de marketing digital para empresas, Desenvolvimento de soluções tecnológicas sob medida",
   },
   icons: {
     icon: "https://fllatech.com/assets/favicon.ico",
@@ -26,7 +27,8 @@ export const metadata: Metadata = {
     apple: "https://fllatech.com/assets/img/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Marketing Digital e Desenvolvimento de Software em Juiz de Fora | Fllatech Soluções",
+    title:
+      "Marketing Digital e Desenvolvimento de Software em Juiz de Fora | Fllatech Soluções",
     description:
       "Especialistas em Marketing Digital, Sites, Lojas Virtuais e Sistemas Sob Medida. Transformamos ideias em tecnologia que gera resultado.",
     url: "https://fllatech.com",
@@ -54,7 +56,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <head>
         {/* Google Tag Manager */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17041125644" />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17041125644"
+        />
         <Script
           id="gtag-init"
           strategy="afterInteractive"
@@ -68,7 +73,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           }}
         />
         {/* Google Site Verification */}
-        <meta name="google-site-verification" content="OKPFXz9XoaOw3aT6TSq5OfM-enkHalfEcNUAY1Sx-DY" />
+        <meta
+          name="google-site-verification"
+          content="OKPFXz9XoaOw3aT6TSq5OfM-enkHalfEcNUAY1Sx-DY"
+        />
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
